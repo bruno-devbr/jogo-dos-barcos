@@ -38,8 +38,8 @@ function modal(cor, status, resultado) {
 
     // Corrigido: usa setInterval e limpa com clearInterval
     const interval = setInterval(() => {
-        i--;
         timeSpan_child.textContent = i;
+        i--;
 
         if (i < 0) {
             clearInterval(interval); // Impede que continue executando após reload
